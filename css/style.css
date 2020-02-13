@@ -1,0 +1,232 @@
+:root {
+    --verde: #00b30c;
+    --gris1: #353537;
+    --gris2: #eaeaeb;
+    --gris3: #777777;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-size: 3rem;
+}
+
+/* Scroll */
+.scroll .navbar-light .navbar-nav .active>.nav-link {
+    color: #777777;
+}
+
+.scroll .nav-link {
+    color: #777777;
+}
+
+.scroll {
+    border-bottom: 1px solid #cccccc;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 100;
+    margin-top: -300px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+@media (min-width: 768px){
+    .scroll.activo {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.scroll .up {
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/* Header */
+.titulo {
+    font-weight: 700!important;
+}
+
+.btn-success {
+    background-color: #00b30c;
+}
+
+.header {
+    background-image: url(../img/hero.jpg);
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .nav-link {
+    color: #ffffff;
+}
+
+.buscador {
+    margin-top: 1rem;
+}
+
+@media(min-width: 768px) {
+    .buscador {
+        margin-top: 6rem;
+    }
+}
+
+
+/* Servicios */
+.category {
+    padding-bottom: 100px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.category h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.category p {
+    color: #999999;
+    opacity: 0;
+    padding-top: 30px;
+    transition: all .4s ease;
+}
+
+.category:hover p {
+    padding-top: 10px;
+    opacity: 1;
+}
+
+.category h3::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: #00b30c;
+    margin: 0 auto 20px auto;
+    transition: all .4s ease;
+}
+
+.category:hover h3::before {
+    width: 180px;
+}
+
+
+/* Video modal */
+.bg-dark {
+    background-color: #353537!important;
+}
+
+.video-modal .row {
+    min-height: 20rem;
+}
+
+
+/* Flex 5 */
+.first-steep .row > div {
+    flex: 1 0 calc(50% - 1rem);
+}
+
+@media (min-width: 768px) {
+    .first-steep .row > div {
+        flex: 0 1 calc(20% - 1rem);
+    }
+}
+
+.first-steep .descripcion {
+    height: 20rem;
+    background-size: cover;
+}
+.first-steep .descripcion  span {
+    font-weight: 700;
+}
+.first-steep .logotipo {
+    background-image: url(../img/servicio1.png);
+}
+.first-steep .social-media {
+    background-image: url(../img/servicio2.png);
+    background-size: cover;
+}
+.first-steep .audio {
+    background-image: url(../img/servicio3.png);
+    background-size: cover;
+}
+.first-steep .traducciones {
+    background-image: url(../img/servicio4.png);
+    background-size: cover;
+}
+.first-steep .wordpress {
+    background-image: url(../img/servicio5.png);
+    background-size: cover;
+}  
+
+/* Beneficios */
+.beneficios .row {
+    min-height: 18rem;
+}
+
+
+/* Testimonios */
+.testimonios {
+    background-color: #eaeaeb;
+}
+
+.testimonios .carousel {
+    background-color: #ffffff;
+}
+
+.testimonios .carousel-item h4 {
+    font-weight: 700;
+}
+
+.testimonios .carousel-item blockquote {
+    font-size: 1.8rem;
+    color: #676767;
+    font-style: italic;
+}
+
+.testimonios .carousel-item p {
+    font-size: .8rem;
+}
+
+
+/* Footer */
+.footer {
+    border-top: 1px solid #eaeaeb;
+}
+
+.footer h3 {
+    color: #777777;
+    font-size: 1.2rem;
+}
+
+.footer .nav-link {
+    color: #777777!important;
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+
+.footer .container-fluid  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container-fluid > div {
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer .container-fluid > div  {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .container-fluid > div  {
+        flex: 0 1 calc(20%);
+    }
+}
